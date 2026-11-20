@@ -1,57 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Discover Morocco - Photo Gallery</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
 </head>
 
 <body>
 
     <header>
-        <h1>Discover Morocco 🇲🇦</h1>
-        <p>Explore the beauty of Morocco through pictures.</p>
+        <h1>Discover Morocco</h1>
+        <p>Explore the beauty of Morocco through photography</p>
     </header>
 
     <main>
-        <h2>Morocco Photo Gallery</h2>
+        <div id="image">
+            Hover over an image below to display here.
+        </div>
 
         <div class="gallery">
 
-            <figure>
-                <img src="https://images.unsplash.com/photo-1539020140153-e479b8c22e70"
-                    alt="Beautiful blue streets of Chefchaouen">
-                <figcaption>Chefchaouen</figcaption>
-            </figure>
+            <img src="https://images.unsplash.com/photo-1539020140153-e479b8c22e70?w=800"
+                 alt="Beautiful blue streets of Chefchaouen"
+                 onmouseover="upDate(this)"
+                 onmouseleave="unDo()">
 
-            <figure>
-                <img src="https://images.unsplash.com/photo-1489749798305-4fea3ae63d43"
-                    alt="Traditional architecture in Morocco">
-                <figcaption>Marrakech</figcaption>
-            </figure>
+            <img src="https://images.unsplash.com/photo-1489749798305-4fea3ae63d43?w=800"
+                 alt="Traditional Moroccan architecture"
+                 onmouseover="upDate(this)"
+                 onmouseleave="unDo()">
 
-            <figure>
-                <img src="https://images.unsplash.com/photo-1509316785289-025f5b846b35"
-                    alt="Golden sand dunes in the Sahara Desert">
-                <figcaption>Sahara Desert</figcaption>
-            </figure>
+            <img src="https://images.unsplash.com/photo-1512553353614-82a7370096dc?w=800"
+                 alt="Beautiful desert landscape"
+                 onmouseover="upDate(this)"
+                 onmouseleave="unDo()">
 
-            <figure>
-                <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b"
-                    alt="Beautiful mountain landscape">
-                <figcaption>Atlas Mountains</figcaption>
-            </figure>
+            <img src="https://images.unsplash.com/photo-1539020140153-e479b8c22e70?w=800&sat=-50"
+                 alt="Moroccan city streets"
+                 onmouseover="upDate(this)"
+                 onmouseleave="unDo()">
+
+            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=800"
+                 alt="Amazing mountain scenery"
+                 onmouseover="upDate(this)"
+                 onmouseleave="unDo()">
+
+            <img src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?w=800"
+                 alt="Beautiful sunset over nature"
+                 onmouseover="upDate(this)"
+                 onmouseleave="unDo()">
 
         </div>
     </main>
 
     <footer>
-        <p>© 2026 Discover Morocco</p>
+        <p>Discover the beauty of Morocco</p>
     </footer>
 
-</body>
+    <script src="script.js"></script>
 
+</body>
 </html>
