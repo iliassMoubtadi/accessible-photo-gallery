@@ -1,26 +1,14 @@
-const images = document.querySelectorAll(".gallery img");
+function upDate(previewPic) {
+    console.log("Mouse over");
 
-images.forEach(function (image) {
+    document.getElementById("image").style.backgroundImage =
+        "url('" + previewPic.src + "')";
 
-    image.addEventListener("click", function () {
+    document.getElementById("image").innerHTML =
+        previewPic.alt;
+}
 
-        const overlay = document.createElement("div");
-
-        overlay.classList.add("overlay");
-
-        const bigImage = document.createElement("img");
-
-        bigImage.src = image.src;
-        bigImage.alt = image.alt;
-
-        overlay.appendChild(bigImage);
-
-        document.body.appendChild(overlay);
-
-        overlay.addEventListener("click", function () {
-            overlay.remove();
-        });
-
-    });
-
-});
+function unDo() {
+    document.getElementById("image").style.backgroundImage = "url('')";
+    document.getElementById("image").innerHTML = "Hover over an image below to display here.";
+}
